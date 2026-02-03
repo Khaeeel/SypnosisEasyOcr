@@ -1,0 +1,701 @@
+[
+  {
+    "file": "Screenshot 2026-01-29 103633.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Alberto Catapang",
+        "sender": "Alberto Catapang",
+        "message": "am selling 2 piece of chicken poppers with mayo and ketchup",
+        "message_type": "text",
+        "confidence_score": 0.913729279330066,
+        "screenshot_path": "Screenshot 2026-01-29 103633.png"
+      },
+      {
+        "timestamp": "2026-02-02 10:34",
+        "sender_raw": "Alberto Catapang",
+        "sender": "Alberto Catapang",
+        "message": "please reply asap please reply asap replying want 2 pay 67 P for everything and everyone",
+        "message_type": "text",
+        "confidence_score": 0.6202589372807554,
+        "screenshot_path": "Screenshot 2026-01-29 103633.png"
+      },
+      {
+        "timestamp": "2026-02-02 10:34",
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "replying",
+        "message_type": "reply",
+        "confidence_score": 0.9995271203130054,
+        "screenshot_path": "Screenshot 2026-01-29 103633.png",
+        "reply_to": {
+          "sender": "Alberto Catapang",
+          "message_preview": "want 2 pay 67 P for everything and everyone"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 10:34",
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "want 2 pay 67",
+        "message_type": "reply",
+        "confidence_score": 0.8368056237065528,
+        "screenshot_path": "Screenshot 2026-01-29 103633.png",
+        "reply_to": {
+          "sender": "Alberto Catapang",
+          "message_preview": "want 2 pay 67 P for everything and everyone"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 10:34",
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "for everything and everyone",
+        "message_type": "reply",
+        "confidence_score": 0.9928302583699138,
+        "screenshot_path": "Screenshot 2026-01-29 103633.png",
+        "reply_to": {
+          "sender": "Alberto Catapang",
+          "message_preview": "want 2 pay 67 P for everything and everyone"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 10:34",
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "Okay (",
+        "message_type": "text",
+        "confidence_score": 0.3863248796322177,
+        "screenshot_path": "Screenshot 2026-01-29 103633.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-01-30 081919.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "spent the day working on a local RAG assistant to help summarize and query the Viber data. At first; tried running a Claude-style setup using the Phi-3-mini model, but it was too heavy for my current setup and kept crashing because of the memory load. To fix this, had to pivot to a much lighter model; TinyLlama-1.1B, and optimized it to run strictly on the CPU with lower memory usage:",
+        "message_type": "text",
+        "confidence_score": 0.6006534029404167,
+        "screenshot_path": "Screenshot 2026-01-30 081919.png"
+      },
+      {
+        "timestamp": "2026-02-02 08:55",
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "spent the working on a local RAG assistant to help summarize and query the Viber data. At first; tried Claude-style setup using the Phi-3-mini model, but it was too heavy for my current setup and kept crashing because of the memor_ Freaky Fridayyyyyyyyyy 10 ys yan detect hindi nade-etect eBron shoots no rebound by Bosh; backout to Allen; his three-pointer; BANG; CURRY WAY DOWNTOWN BANG BANG WHAT A SHOT FROM CURRY IS THIS THE DAGGER mitochondria is the powerhouse of the cell spiderman spiderboy jru hymn bili kayo facemask sa nanay ni panoy kape tayo umaga gandang day \" running gabi _ bayan",
+        "message_type": "text",
+        "confidence_score": 0.3332170781797507,
+        "screenshot_path": "Screenshot 2026-01-30 081919.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-01-30 140535.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Alberto Catapang",
+        "sender": "Alberto Catapang",
+        "message": "carpenter atabang",
+        "message_type": "text",
+        "confidence_score": 0.7987605225781282,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png"
+      },
+      {
+        "timestamp": "2026-02-02 16:30",
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "watashiwa nani",
+        "message_type": "text",
+        "confidence_score": 0.9987365458439499,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png"
+      },
+      {
+        "timestamp": "2026-02-02 16:30",
+        "sender_raw": "Alberto Catapang",
+        "sender": "Alberto Catapang",
+        "message": "bharron balondo",
+        "message_type": "text",
+        "confidence_score": 0.6567578416532103,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png"
+      },
+      {
+        "timestamp": "2026-02-02 16:31",
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "ohayo bharon catapang",
+        "message_type": "reply",
+        "confidence_score": 0.8176750622144483,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png",
+        "reply_to": {
+          "sender": "Alberto Catapang",
+          "message_preview": "bharron balondo"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 16:31",
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "ako daw ulte",
+        "message_type": "text",
+        "confidence_score": 0.9975952360689548,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png"
+      },
+      {
+        "timestamp": "2026-02-02 16:31",
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "ohayo bharon catapang",
+        "message_type": "reply",
+        "confidence_score": 0.7096818386774523,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png",
+        "reply_to": {
+          "sender": "Alberto Catapang",
+          "message_preview": "bharron balondo"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 16:31",
+        "sender_raw": "Nts",
+        "sender": "NTS",
+        "message": "ohaaaay",
+        "message_type": "text",
+        "confidence_score": 0.9946991394259188,
+        "screenshot_path": "Screenshot 2026-01-30 140535.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-02-02 085228.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "tuesday",
+        "message_type": "text",
+        "confidence_score": 0.9999972965862419,
+        "screenshot_path": "Screenshot 2026-02-02 085228.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "saturday",
+        "message_type": "reply",
+        "confidence_score": 0.9998935768617938,
+        "screenshot_path": "Screenshot 2026-02-02 085228.png",
+        "reply_to": {
+          "sender": "Leonardo Yoro",
+          "message_preview": "tuesday"
+        }
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-28_11-34-55-375.jpg",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Uno Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "photo image",
+        "message_type": "image",
+        "confidence_score": 0.7,
+        "screenshot_path": "viber_image_2026-01-28_11-34-55-375.jpg"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Salre",
+        "sender": "Salre",
+        "message": "Tol",
+        "message_type": "reply",
+        "confidence_score": 0.00950883346783643,
+        "screenshot_path": "viber_image_2026-01-28_11-34-55-375.jpg",
+        "reply_to": {
+          "message_preview": "Photo message",
+          "sender": "Leonardo Yoro"
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Salre",
+        "sender": "Salre",
+        "message": "Hechanova",
+        "message_type": "text",
+        "confidence_score": 0.9997903793469515,
+        "screenshot_path": "viber_image_2026-01-28_11-34-55-375.jpg"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Salre",
+        "sender": "Salre",
+        "message": "@ Photo message",
+        "message_type": "reply",
+        "confidence_score": 0.7818405208410419,
+        "screenshot_path": "viber_image_2026-01-28_11-34-55-375.jpg",
+        "reply_to": {
+          "sender": "Leonardo Yoro",
+          "message_preview": "photo image"
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Salre",
+        "sender": "Salre",
+        "message": "Joon",
+        "message_type": "text",
+        "confidence_score": 0.48454320003186757,
+        "screenshot_path": "viber_image_2026-01-28_11-34-55-375.jpg"
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-28_11-35-01-920.jpg",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "@ Photo message",
+        "message_type": "reply",
+        "confidence_score": 0.7543004371128122,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Selling; same lang pO ito dun sa Ikilo na ticken poppers",
+        "message_type": "text",
+        "confidence_score": 0.5251041185864019,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Salled",
+        "sender": "Salled",
+        "message": "Chicken Poppers 1/4kg",
+        "message_type": "text",
+        "confidence_score": 0.45606626862964855,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 19:21",
+        "sender_raw": "Salled",
+        "sender": "Salled",
+        "message": "Edited",
+        "message_type": "text",
+        "confidence_score": 0.7071990800679294,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 19:21",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Selling; same lang pO ito dun",
+        "message_type": "text",
+        "confidence_score": 0.52783334459341,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 19:21",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Ikilo na chidken poppers",
+        "message_type": "reply",
+        "confidence_score": 0.8977516365233409,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg",
+        "reply_to": {
+          "sender": "Salled",
+          "message_preview": "Chicken Poppers 1/4kg"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 19:21",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Saited Crispy Chidkren Poppers I/4kg",
+        "message_type": "reply",
+        "confidence_score": 0.3526266307844312,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg",
+        "reply_to": {
+          "sender": "Salled",
+          "message_preview": "Chicken Poppers 1/4kg"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 19:21",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "T45AM Comfac Ems Joan Hechanova",
+        "message_type": "text",
+        "confidence_score": 0.15426803040101428,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 19:21",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "@ Photo message",
+        "message_type": "reply",
+        "confidence_score": 0.9238760203442854,
+        "screenshot_path": "viber_image_2026-01-28_11-35-01-920.jpg",
+        "reply_to": {
+          "sender": "Salled",
+          "message_preview": "Edited"
+        }
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-28_11-35-04-712.jpg",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Comtac Ems Joan Hechanova",
+        "message_type": "text",
+        "confidence_score": 0.43149358641546215,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "@ Photo message",
+        "message_type": "reply",
+        "confidence_score": 0.631232829515842,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 08:34",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Jo-Ann P M Joan Hechanova",
+        "message_type": "text",
+        "confidence_score": 0.6809330674099265,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 08:34",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "@ Phato message",
+        "message_type": "reply",
+        "confidence_score": 0.7728435202479472,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 08:34",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "pahabol",
+        "message_type": "text",
+        "confidence_score": 0.732428182583705,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 08:42",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Thank yov Po DJPA @comfac",
+        "message_type": "reply",
+        "confidence_score": 0.11588077715406171,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      },
+      {
+        "timestamp": "2026-02-02 08:42",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Ems Iuo-Ann Aim,",
+        "message_type": "text",
+        "confidence_score": 0.17005689164618654,
+        "screenshot_path": "viber_image_2026-01-28_11-35-04-712.jpg"
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-30_16-07-32-470.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Photo message",
+        "message_type": "text",
+        "confidence_score": 0.9755148700583608,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Joan Hechanova",
+        "sender": "Joan Hechanova",
+        "message": "Pinned on 4/16/",
+        "message_type": "text",
+        "confidence_score": 0.6572288763365322,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "https /Nvt tiktokcom/ZSHoEsXJnCyGH-BDMXy/",
+        "message_type": "text",
+        "confidence_score": 0.7566231983397097,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "@all good day live po tau today EJ's closet Nuod na po Kau and bka Meron kaung",
+        "message_type": "reply",
+        "confidence_score": 0.525941718449488,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png",
+        "reply_to": {
+          "sender": "Joan Hechanova",
+          "message_preview": "Pinned on 4/16/"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "magustuhan Happy weekend everyone https | /vt tiktok com/ZS9IdRBwIAAIW-X. vt tiktokcom https INt tiktok com/ZS91dRBwlAA9W= xHcGL 10 OOAM https / Nvt tiktok com/zS9 dRBw AA9w-xtHcG/",
+        "message_type": "text",
+        "confidence_score": 0.2262870360133447,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "Good day to @all we are on sale please follow and share Nuod na Kau ng live today sale kmi",
+        "message_type": "reply",
+        "confidence_score": 0.7313223003226427,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png",
+        "reply_to": {
+          "sender": "Joan Hechanova",
+          "message_preview": "Pinned on 4/16/"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "bka may magustuhan Kau: Thanks and happy Sunday to all Activate Windows IO OIAM Go to Settings to activate Windows; olo message_ Itype =",
+        "message_type": "text",
+        "confidence_score": 0.20232772922690886,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-470.png"
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-30_16-07-32-827.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "Photo message",
+        "message_type": "text",
+        "confidence_score": 0.9958116239505103,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "Pinned on 4/16/ hehehehe",
+        "message_type": "text",
+        "confidence_score": 0.826420183937132,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Michael Magsino",
+        "sender": "Michael Magsino",
+        "message": "ok po. bilis ah: haha",
+        "message_type": "text",
+        "confidence_score": 0.4802518730046749,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "https / /vt tiktok com/ZSHoEsXJnCyGH-_ vt tiktokcom https LNt tiktok com/ZSHoEsXInCyGH BDMXyL https /Nvt.tiktok com/ZSHoEsXJnCyGH-BDMXy/",
+        "message_type": "text",
+        "confidence_score": 0.43886312660845667,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "@all good",
+        "message_type": "reply",
+        "confidence_score": 0.9991930287057503,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png",
+        "reply_to": {
+          "sender": "Michael Magsino",
+          "message_preview": "ok po. bilis ah: haha"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jonathan",
+        "sender": "Jonathan",
+        "message": "live po tau today EJ's closet Nuod na po Kau and bka Meron kaung magustuhan: Activate Windows Go to Settings to activate Windows olo",
+        "message_type": "text",
+        "confidence_score": 0.7081809427367615,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Itype",
+        "sender": "Itype",
+        "message": "message day",
+        "message_type": "text",
+        "confidence_score": 0.9998779385167662,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Itype",
+        "sender": "Itype",
+        "message": "Michael Magsino",
+        "message_type": "reply",
+        "confidence_score": 0.9056289734487349,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png",
+        "reply_to": {
+          "sender": "Jonathan",
+          "message_preview": "Activate Windows"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Itype",
+        "sender": "Itype",
+        "message": "ok pO. bilis ah: haha",
+        "message_type": "text",
+        "confidence_score": 0.5060749392632753,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-827.png"
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-30_16-07-32-939.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Itype",
+        "sender": "Itype",
+        "message": "Photo message",
+        "message_type": "text",
+        "confidence_score": 0.9366898455463382,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      },
+      {
+        "timestamp": "2026-02-02 08:27",
+        "sender_raw": "Jpa",
+        "sender": "JPA",
+        "message": "gusto? Meron akong spare na 6'$ na Salted Egg, sino gusto? mine npo Sir. Thanks.",
+        "message_type": "text",
+        "confidence_score": 0.605804805637317,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      },
+      {
+        "timestamp": "2026-02-02 08:32",
+        "sender_raw": "Jpa",
+        "sender": "JPA",
+        "message": "may",
+        "message_type": "reply",
+        "confidence_score": 0.9810563827286124,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png",
+        "reply_to": {
+          "sender": "Itype",
+          "message_preview": "message"
+        }
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Itype",
+        "sender": "Itype",
+        "message": "Pinned on 4/16/",
+        "message_type": "text",
+        "confidence_score": 0.826420183937132,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jpa",
+        "sender": "JPA",
+        "message": "Meron akong spare na 6's na Salted Egg sino may gusto? Meron akong spare na 6'$ na Salted Egg; sino may gusto? mine npo Sir. Thanks.",
+        "message_type": "text",
+        "confidence_score": 0.67947630442222,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Michael Magsino",
+        "sender": "Michael Magsino",
+        "message": "mine npo Sir. Thanks",
+        "message_type": "reply",
+        "confidence_score": 0.9645146879136541,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png",
+        "reply_to": {
+          "sender": "Jpa",
+          "message_preview": "mine npo Sir. Thanks."
+        }
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Michael Magsino",
+        "sender": "Michael Magsino",
+        "message": "sorry, may nag mine na_ hehehehe Activate Windows Go to Settings to activate Windows: + olo",
+        "message_type": "text",
+        "confidence_score": 0.50168396001494,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Itype",
+        "sender": "Itype",
+        "message": "message",
+        "message_type": "text",
+        "confidence_score": 0.710108045123084,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      },
+      {
+        "timestamp": "2026-02-02 20:25",
+        "sender_raw": "Jpa",
+        "sender": "JPA",
+        "message": "Meron akong spare na 6'5 na Salted Egg, sino may",
+        "message_type": "text",
+        "confidence_score": 0.7254645563050662,
+        "screenshot_path": "viber_image_2026-01-30_16-07-32-939.png"
+      }
+    ]
+  },
+  {
+    "file": "viber_image_2026-01-30_16-07-33-024.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Jpa",
+        "sender": "JPA",
+        "message": "photo image",
+        "message_type": "image",
+        "confidence_score": 0.7,
+        "screenshot_path": "viber_image_2026-01-30_16-07-33-024.png"
+      }
+    ]
+  }
+]
