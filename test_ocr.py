@@ -177,16 +177,29 @@ def is_reply_preview_text(text, img=None, bbox=None):
             if 2 <= len(potential_sender) <= 25 and len(potential_preview) >= 2:
                 return True
 
-    if 10 <= len(text_stripped) <= 80:
+    # allow short acknowledgements as reply previews
+    short_reply_words = {"ty", "thanks", "yes", "yeah", "oo", "nga", "ok", "okay", "sure"}
+
+    if text_stripped.lower() in short_reply_words:
+        return True
+
+    if 2 <= len(text_stripped) <= 80:
         has_alpha = any(c.isalpha() for c in text_stripped)
-        has_space = ' ' in text_stripped
-        if has_alpha and has_space:
+        if has_alpha:
             return True
 
     return False
 
-def is_reply_to_previous(current_text, recent_messages, current_sender=None, threshold=0.4):
 
+def is_reply_to_previous(current_text, recent_messages, current_sender=None, threshold=0.4):
+        # VERY SHORT replies → attach to most recent different sender
+    if len(current_text.strip()) <= 5:
+        for msg in reversed(recent_messages[-5:]):
+            if msg.get("sender") != current_sender and msg.get("message"):
+                return {
+                    "sender": msg.get("sender"),
+                    "message_preview": msg.get("message", "")[:100]
+                }
     if not current_text or not recent_messages:
         return None
     
@@ -381,6 +394,92 @@ def extract_urls(text):
     
     return cleaned_text, urls
 
+def detect_reply_block(bubble_objects, idx):
+    """
+    Detect reply block pattern: sender1 -> quoted_lines -> sender2 -> reply_lines
+    Returns: (reply_data, last_processed_idx) or (None, idx)
+    """
+    if idx + 1 >= len(bubble_objects):
+        return None, idx
+    
+    current_bubble = bubble_objects[idx]
+    next_bubble = bubble_objects[idx + 1]
+    
+    # Get sender names from current and next bubbles
+    current_sender = None
+    next_sender = None
+    current_conf = 0
+    next_conf = 0
+    
+    # Extract first text from current bubble
+    if current_bubble["ocr"]:
+        first_text = current_bubble["ocr"][0][1].strip() if current_bubble["ocr"][0][1] else ""
+        current_sender = resolve_sender_alias(first_text) if is_valid_sender(first_text, current_bubble["x"], current_bubble["w"]) else None
+        current_conf = current_bubble["ocr"][0][2] if len(current_bubble["ocr"][0]) > 2 else 0
+    
+    # Extract first text from next bubble
+    if next_bubble["ocr"]:
+        first_text = next_bubble["ocr"][0][1].strip() if next_bubble["ocr"][0][1] else ""
+        next_sender = resolve_sender_alias(first_text) if is_valid_sender(first_text, next_bubble["x"], next_bubble["w"]) else None
+        next_conf = next_bubble["ocr"][0][2] if len(next_bubble["ocr"][0]) > 2 else 0
+    
+    # Check if we have sender1 -> quoted_text -> sender2 pattern
+    if not (current_sender and next_sender and current_sender != next_sender):
+        return None, idx
+    
+    # Determine indent threshold for separating quoted from reply text
+    sender_x = current_bubble["x"]
+    target_x = next_bubble["x"]
+    indent_threshold = (sender_x + target_x) / 2
+    
+    # Collect quote and reply parts
+    quote_parts = []
+    reply_parts = []
+    scores = [current_conf, next_conf]
+    
+    # Process lines from current bubble (these are quoted)
+    if current_bubble["ocr"] and len(current_bubble["ocr"]) > 1:
+        for ocr_item in current_bubble["ocr"][1:]:
+            text = ocr_item[1].strip() if ocr_item[1] else ""
+            if text and not is_system_message(text):
+                quote_parts.append(text)
+                if len(ocr_item) > 2:
+                    scores.append(ocr_item[2])
+    
+    # Process lines from next bubble - separate by indent
+    if next_bubble["ocr"] and len(next_bubble["ocr"]) > 1:
+        for ocr_item in next_bubble["ocr"][1:]:
+            text = ocr_item[1].strip() if ocr_item[1] else ""
+            if text and not is_system_message(text):
+                # Approximate indent check
+                x_pos = next_bubble["x"]
+                if x_pos > indent_threshold:
+                    quote_parts.append(text)
+                else:
+                    reply_parts.append(text)
+                if len(ocr_item) > 2:
+                    scores.append(ocr_item[2])
+    
+    full_quote = " ".join(quote_parts).strip() if quote_parts else "[MEDIA/LINK PREVIEW]"
+    full_reply = " ".join(reply_parts).strip()
+    
+    if not full_reply:
+        return None, idx
+    
+    avg_conf = round(float(np.mean(scores)), 4) if scores else 0.0
+    
+    reply_data = {
+        "original_sender": next_sender,
+        "original_message": full_quote
+    }
+    
+    return {
+        "reply_data": reply_data,
+        "reply_sender": current_sender,
+        "reply_text": full_reply,
+        "confidence": avg_conf
+    }, idx + 1
+
 def format_timestamp(ts_str):
     if not ts_str:
         return None
@@ -414,19 +513,56 @@ def normalize_sender(sender):
     return sender
 
 def resolve_sender_alias(sender_raw):
+    """
+    Resolve sender name using PaddleOCR-style sophisticated matching:
+    1. Direct match in aliases
+    2. Substring match (handle OCR errors like 'ai' vs 'al', '0' vs 'o')
+    3. Fuzzy matching with 0.7 cutoff
+    """
     if not sender_raw:
         return sender_raw
 
-    normalized_lower = sender_raw.lower().strip()
-
-    if normalized_lower in SENDER_ALIASES:
-        return SENDER_ALIASES[normalized_lower]
+    # Step 1: Clean and normalize text with common OCR errors
+    clean = sender_raw.lower().strip()
+    clean = clean.replace('ai', 'al').replace('0', 'o').replace('1', 'i').replace('l', 'i')
     
-    matches = get_close_matches(normalized_lower, SENDER_ALIASES.keys(), n=1, cutoff=0.7)
+    # Step 2: Direct match in SENDER_ALIASES
+    for alias, official in SENDER_ALIASES.items():
+        if alias == clean:
+            return official
+    
+    # Step 3: Substring/partial match (most common OCR error recovery)
+    for alias, official in SENDER_ALIASES.items():
+        if alias in clean or clean in alias:
+            return official
+    
+    # Step 4: Fuzzy matching with high confidence threshold
+    matches = get_close_matches(clean, SENDER_ALIASES.keys(), n=1, cutoff=0.7)
     if matches:
         return SENDER_ALIASES[matches[0]]
 
     return sender_raw
+
+def should_merge(prev_msg, current_sender, current_text):
+    if not prev_msg:
+        return False
+
+    if prev_msg["sender"] != current_sender:
+        return False
+
+    # timestamps / day markers should not merge
+    if current_text.lower() in ["yesterday", "today"]:
+        return False
+
+    if (
+        current_text[0].islower()
+        or len(current_text.split()) <= 3
+        or prev_msg["message"].endswith((",", ";"))
+    ):
+        return True
+
+    return False
+
 
 def post_process_message(msg, previous_sender=None):
     if not msg:
@@ -487,6 +623,13 @@ def infer_sender_from_text(message_text, previous_sender=None):
 
 
 def is_valid_sender(text, left_position, image_width, y_position=None, img=None, bbox=None, is_first_in_screenshot=False, state=None):
+    """
+    Enhanced sender validation using PaddleOCR logic:
+    - Filters out system/action messages
+    - Uses color detection (violet = sender)
+    - Pattern matching for proper names
+    - Position-based heuristics
+    """
     if state and state.get("reply_preview_zone") and y_position is not None:
         zone = state["reply_preview_zone"]
         if zone["y_top"] <= y_position <= zone["y_bottom"]:
@@ -500,25 +643,41 @@ def is_valid_sender(text, left_position, image_width, y_position=None, img=None,
     if text_stripped.startswith('@'):
         return False
     
+    # Filter out system/action keywords (PaddleOCR approach)
     action_keywords = ['mentioned', 'replied', 'reacted', 'pinned', 'forwarded', 'shared', 'started', 'called', 'left', 'added', 'removed']
     if any(keyword in text_lower for keyword in action_keywords):
         return False
     
+    # STRONGEST SIGNAL: Violet sender color (PaddleOCR uses this)
     if img is not None and bbox is not None:
         text_color = get_text_region_color(img, bbox)
-        
         if text_color and is_violet_sender_color(text_color):
             return True
     
-    if re.match(r'^[A-Z]{2,5}$', text_stripped):
-        if left_position < (image_width * 0.35):
-            return True
-    
+    # Check if text matches known aliases (PaddleOCR style)
     if text_lower in SENDER_ALIASES:
         if left_position < (image_width * 0.35):
             return True
     
+    # Fuzzy match against aliases (more lenient)
+    clean_for_match = text_lower.replace('ai', 'al').replace('0', 'o')
+    matches = get_close_matches(clean_for_match, SENDER_ALIASES.keys(), n=1, cutoff=0.65)
+    if matches:
+        if left_position < (image_width * 0.35):
+            return True
+    
+    # Pattern 1: All caps abbreviations (2-5 chars) - PaddleOCR approach
+    if re.match(r'^[A-Z]{2,5}$', text_stripped):
+        if left_position < (image_width * 0.35):
+            return True
+    
+    # Pattern 2: Proper name format (Cap Followed By Lowercase, can have spaces)
     if re.match(r'^[A-Z][a-z]+(\s[A-Z][a-z]+)*$', text_stripped):
+        if left_position < (image_width * 0.35) and text_lower not in REJECT_WORDS:
+            return True
+    
+    # Pattern 3: Mixed case with dashes (like "Jo-Ann P.M.")
+    if re.match(r'^[A-Z][a-zA-Z]*(-[A-Z][a-zA-Z]*)*(\s[A-Z][a-zA-Z.]*)*$', text_stripped):
         if left_position < (image_width * 0.35) and text_lower not in REJECT_WORDS:
             return True
     
@@ -612,11 +771,36 @@ def process_viber_chat_v5(folder_path):
             results.sort(key=lambda x: x[0][0][1])
         file_messages = []
         first_element = True
+        bubble_idx = 0
 
-        for bubble in bubble_objects:
+        while bubble_idx < len(bubble_objects):
+            bubble = bubble_objects[bubble_idx]
             x, y, w, h = bubble["x"], bubble["y"], bubble["w"], bubble["h"]
             ocr_results = bubble["ocr"]
             is_image = bubble["is_image"]
+
+            # TRY TO DETECT REPLY BLOCK FIRST
+            reply_block_result, next_idx = detect_reply_block(bubble_objects, bubble_idx)
+            
+            
+            if reply_block_result:
+                # We found a reply block pattern
+                reply_msg = {
+                    "timestamp": None,
+                    "sender_raw": reply_block_result["reply_sender"],
+                    "sender": reply_block_result["reply_sender"],
+                    "message": reply_block_result["reply_text"],
+                    "message_type": "reply",
+                    "confidence_score": reply_block_result["confidence"],
+                    "screenshot_path": img_file,
+                    "reply_to": reply_block_result["reply_data"]
+                }
+                file_messages.append(reply_msg)
+                state["active_sender"] = reply_block_result["reply_sender"]
+                global_state["last_active_sender"] = state["active_sender"]
+                bubble_idx = next_idx
+                first_element = False
+                continue
 
             if is_image:
                 msg = {
@@ -635,6 +819,7 @@ def process_viber_chat_v5(folder_path):
                     "message_preview": "Photo message",
                     "sender": msg["sender"]
                 }
+                bubble_idx += 1
                 continue
 
             for (bbox, raw_text, conf) in ocr_results:
@@ -747,6 +932,8 @@ def process_viber_chat_v5(folder_path):
                                 state["last_left_x"] = left_x
 
                     first_element = False
+            
+            bubble_idx += 1
     
 
    
@@ -794,7 +981,8 @@ def merge_message_fragments(messages):
     
     for msg in messages:
 
-        if msg.get("message_type") in ("image", "reply"):
+                # Only images should force a hard break
+        if msg.get("message_type") == "image":
             if current_group:
                 merged.append(current_group)
                 current_group = None
@@ -806,9 +994,7 @@ def merge_message_fragments(messages):
             can_merge = (
                 msg.get("sender") == current_group.get("sender") and
                 msg.get("screenshot_path") == current_group.get("screenshot_path") and
-                msg.get("message_type") == "text" and
-                current_group.get("message_type") == "text" and
-                not current_group.get("reply_to")  
+                msg.get("message_type") == current_group.get("message_type")
             )
             
             if can_merge:

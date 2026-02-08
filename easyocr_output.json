@@ -1,0 +1,610 @@
+[
+  {
+    "file": "Screenshot from 2026-02-05 10-03-12.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "guys quick check lang",
+        "message_type": "text",
+        "confidence_score": 0.9535416827257431,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-12.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Andito",
+        "message_type": "text",
+        "confidence_score": 0.9999823825152249,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-12.png"
+      },
+      {
+        "timestamp": "247PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "present",
+        "message_type": "text",
+        "confidence_score": 0.9999990988623428,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-12.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "officially, done na ba yung assigned tasks natin?",
+        "message_type": "text",
+        "confidence_score": 0.7088019269413705,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-12.png"
+      },
+      {
+        "timestamp": "249PM",
+        "sender_raw": "Bharon",
+        "sender": "Bharon Candelaria",
+        "message": "Sa frontend yes,tapos na",
+        "message_type": "text",
+        "confidence_score": 0.6675749526890049,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-12.png"
+      },
+      {
+        "timestamp": "249PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "ML side, baseline comparison done na",
+        "message_type": "text",
+        "confidence_score": 0.8718,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-12.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-26.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "yes;",
+        "message_type": "reply",
+        "confidence_score": 0.8187,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-26.png",
+        "reply_to": {
+          "original_sender": "Dominic Almazan",
+          "original_message": "documented lahat? may notes per run "
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "kava",
+        "message_type": "reply",
+        "confidence_score": 0.9042,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-26.png",
+        "reply_to": {
+          "original_sender": "Dominic Almazan",
+          "original_message": ""
+        }
+      },
+      {
+        "timestamp": "252PM",
+        "sender_raw": "kaya pala mas readable na ngayon yung summaries, di na mukhang random essay",
+        "sender": "Dominic Almazan",
+        "message": "improvement yan ng cleaning; hindi magic solid, ibig sabihin aligned na lahat",
+        "message_type": "text",
+        "confidence_score": 0.736,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-26.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-28.png",
+    "messages": [
+      {
+        "timestamp": "252PM",
+        "sender_raw": "kaya pala mas readable na ngayon yung summaries, di na mukhang random essay",
+        "sender": "Dominic Almazan",
+        "message": "improvement yan ng cleaning hindi magic solid, ibig sabihin aligned na lahat",
+        "message_type": "text",
+        "confidence_score": 0.8485,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-28.png"
+      },
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Rare moment",
+        "message_type": "text",
+        "confidence_score": 0.9300589214056747,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-28.png"
+      },
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "ksince done na tasks, next step is polish pero later na yun",
+        "message_type": "text",
+        "confidence_score": 0.8285899475800186,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-28.png"
+      },
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "finally pwede na huminga",
+        "message_type": "text",
+        "confidence_score": 0.8961525546621207,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-28.png"
+      },
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "hinga, sobrang init today or laptop ko lang? Speaking of B",
+        "message_type": "text",
+        "confidence_score": 0.611,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-28.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-30.png",
+    "messages": [
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "finally pwede na huminga",
+        "message_type": "text",
+        "confidence_score": 0.8868640011773196,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-30.png"
+      },
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Speaking of hinga,sobrang init today or laptop ko lang?",
+        "message_type": "text",
+        "confidence_score": 0.602624230875395,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-30.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "parehongyes",
+        "message_type": "reply",
+        "confidence_score": 0.8586,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-30.png",
+        "reply_to": {
+          "original_sender": "Bharon Candelaria",
+          "original_message": "Speaking of hinga,sobrang init today or laptop ko lang? "
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "parang oven nga",
+        "message_type": "reply",
+        "confidence_score": 0.8452,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-30.png",
+        "reply_to": {
+          "original_sender": "Bharon Candelaria",
+          "original_message": "Speaking ot hinga,sobrang init today or laptop ko lang? "
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Kaya pala",
+        "message_type": "text",
+        "confidence_score": 0.8526082248088742,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-30.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-33.png",
+    "messages": [
+      {
+        "timestamp": "252PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "parehongyes",
+        "message_type": "text",
+        "confidence_score": 0.9997482346915194,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-33.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "parang oven nga",
+        "message_type": "reply",
+        "confidence_score": 0.8945,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-33.png",
+        "reply_to": {
+          "original_sender": "Bharon Candelaria",
+          "original_message": "Speaking of hinga,sobrang init today or laptop ko lang? "
+        }
+      },
+      {
+        "timestamp": "253PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Kaya pala",
+        "message_type": "text",
+        "confidence_score": 0.8526082248088742,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-33.png"
+      },
+      {
+        "timestamp": "253PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "valid excuse yan, gamitin mo sa future",
+        "message_type": "text",
+        "confidence_score": 0.9623352293887949,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-33.png"
+      },
+      {
+        "timestamp": "253PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "mabilis na yung flow ngayon compared sa last sprint btw napansin ko lang Mas",
+        "message_type": "text",
+        "confidence_score": 0.8488,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-33.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-37.png",
+    "messages": [
+      {
+        "timestamp": "253PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "'akala ko' tsaka mas konti na yung",
+        "message_type": "text",
+        "confidence_score": 0.7615,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-37.png"
+      },
+      {
+        "timestamp": "253PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "true, dati puro assumption",
+        "message_type": "text",
+        "confidence_score": 0.8156,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-37.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Assumption is the root of allbugs",
+        "message_type": "text",
+        "confidence_score": 0.8609213184902439,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-37.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "pero ang weird isipin na yung model minsan mas confident pa kesa",
+        "message_type": "text",
+        "confidence_score": 0.874,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-37.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "random thought lang",
+        "sender": "Dominic Almazan",
+        "message": "tao 00, tapos mali naman",
+        "message_type": "text",
+        "confidence_score": 0.849,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-37.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Parang ibang kakilala ko ah",
+        "message_type": "text",
+        "confidence_score": 0.6066856535397384,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-37.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-40.png",
+    "messages": [
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "00, tapos mali naman",
+        "message_type": "text",
+        "confidence_score": 0.4320300105921986,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-40.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Parang ibang kakilala ko ah",
+        "message_type": "text",
+        "confidence_score": 0.9114517176099938,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-40.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "good call",
+        "message_type": "text",
+        "confidence_score": 0.7425249660994551,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-40.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "kaya nga nilagyan ko na ng confidence - flag; 'trust me bro\" yung output para di masyadong",
+        "message_type": "text",
+        "confidence_score": 0.7382,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-40.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "so ano na gagawin natin ngayon, magpahinga or magkunwaring busy",
+        "message_type": "text",
+        "confidence_score": 0.8743572588867776,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-40.png"
+      },
+      {
+        "timestamp": "255PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "magpahinga muna, deserve nyo",
+        "message_type": "text",
+        "confidence_score": 0.8550034891184044,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-40.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-43.png",
+    "messages": [
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "flag, kaya nga nilagyan ko na ng confidence para di masyadong",
+        "message_type": "text",
+        "confidence_score": 0.7221,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-43.png"
+      },
+      {
+        "timestamp": "254PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "gagawin natin ngayon, magpahinga or magkunwaring busy soano na",
+        "message_type": "text",
+        "confidence_score": 0.8499,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-43.png"
+      },
+      {
+        "timestamp": "255PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "magpahinga muna, deserve nyo",
+        "message_type": "text",
+        "confidence_score": 0.9166093364517728,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-43.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "screenshot koyan, baka bawiin",
+        "message_type": "reply",
+        "confidence_score": 0.9095,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-43.png",
+        "reply_to": {
+          "original_sender": "Dominic Almazan",
+          "original_message": "magpahinga muna_ deserve nyo "
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Later na ulit tayo mag",
+        "message_type": "reply",
+        "confidence_score": 0.8998,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-43.png",
+        "reply_to": {
+          "original_sender": "Dominic Almazan",
+          "original_message": "magpahinga muna, deserve nyo ~sync? "
+        }
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-46.png",
+    "messages": [
+      {
+        "timestamp": "255PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "magpahinga muna deserve nyo screenshot koyan, baka bawiin",
+        "message_type": "text",
+        "confidence_score": 0.8725,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-46.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Later na ulit tayo mag",
+        "message_type": "reply",
+        "confidence_score": 0.8834,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-46.png",
+        "reply_to": {
+          "original_sender": "Dominic Almazan",
+          "original_message": "magpahinga muna, deserve nyo ~sync? "
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "oo bukas na",
+        "message_type": "reply",
+        "confidence_score": 0.7459,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-46.png",
+        "reply_to": {
+          "original_sender": "Bharon Candelaria",
+          "original_message": "Later na ulit tayo mag_ ~sync? "
+        }
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "works for me",
+        "message_type": "reply",
+        "confidence_score": 0.8784,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-46.png",
+        "reply_to": {
+          "original_sender": "Bharon Candelaria",
+          "original_message": "Later na ulit tayo mag-sync? "
+        }
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-48.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "works for me",
+        "message_type": "reply",
+        "confidence_score": 0.917,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-48.png",
+        "reply_to": {
+          "original_sender": "Bharon Candelaria",
+          "original_message": "Later na ulit tayo mag-sync? "
+        }
+      },
+      {
+        "timestamp": "255PM",
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Ok imma log off muna",
+        "message_type": "text",
+        "confidence_score": 0.7734913078597345,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-48.png"
+      },
+      {
+        "timestamp": "255PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "same, bago pa ako mag-overthink",
+        "message_type": "text",
+        "confidence_score": 0.7445755383708891,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-48.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "good today guys 'job",
+        "message_type": "text",
+        "confidence_score": 0.8976,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-48.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-50.png",
+    "messages": [
+      {
+        "timestamp": "255PM",
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "same, bago pa ako mag-overthink",
+        "message_type": "text",
+        "confidence_score": 0.8629456722393186,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-50.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "good job today guys btw wag nyo kalimutan mag-commit ha",
+        "message_type": "text",
+        "confidence_score": 0.848,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-50.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Ayy oo nga",
+        "message_type": "text",
+        "confidence_score": 0.7689476914052537,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-50.png"
+      }
+    ]
+  },
+  {
+    "file": "Screenshot from 2026-02-05 10-03-53.png",
+    "messages": [
+      {
+        "timestamp": null,
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "btw wag nyo kalimutan mag-commit ha",
+        "message_type": "text",
+        "confidence_score": 0.963063879950252,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-53.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Bharon Candelaria",
+        "sender": "Bharon Candelaria",
+        "message": "Ayy oo nga",
+        "message_type": "text",
+        "confidence_score": 0.7204057985175666,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-53.png"
+      },
+      {
+        "timestamp": null,
+        "sender_raw": "Leonardo Yoro",
+        "sender": "Leonardo Yoro",
+        "message": "muntik n",
+        "message_type": "text",
+        "confidence_score": 0.9759622704267924,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-53.png"
+      },
+      {
+        "timestamp": "435PM",
+        "sender_raw": "Dominic Almazan",
+        "sender": "Dominic Almazan",
+        "message": "classic ending test_ocr pY 28.4 KB viber_fixed_files json 24.7 KB",
+        "message_type": "text",
+        "confidence_score": 0.8851,
+        "screenshot_path": "Screenshot from 2026-02-05 10-03-53.png"
+      }
+    ]
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "timestamp": "2026-01-22 09:04:38",
+    "sender": "Leonardo",
+    "message": "Guys, quick sync lang. Objective natin this week is ma-complete yung Task Management feature ng system para ready na siya for demo. Gusto ng client na simple lang pero very clear kung ano yung status ng bawat task.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090438.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:04:38",
+    "sender": "Dominic",
+    "message": "Okay, so ang main goal talaga is working end-to-end flow? From create task, edit, mark as done, tapos persistent kahit mag-refresh?",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090438.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:04:38",
+    "sender": "Leonarda",
+    "message": "Yes, exactly. Ayaw nila nung parang checklist lang na nawawala. Gusto nila na parang tracker na may history.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090438.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:04:38",
+    "sender": "Naithan",
+    "message": "So kailangan malinaw sa UI kung alin yung active, alin yung due today, and alin yung done. o Kasi yun yung magiging basis ng daily workflow ng user.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090438.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:04:38",
+    "sender": "Lebron",
+    "message": "Hello",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090438.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:06:56",
+    "sender": "Naithan",
+    "message": "So kailangan malinaw sa UI kung alin yung active, alin yung due today, and alin yung done. o Kasi yun yung magiging basis ng daily workflow ng user.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090656.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:06:56",
+    "sender": "Lebron",
+    "message": "Hello",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090656.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:06:56",
+    "sender": "Lebron",
+    "message": "Agree. From user perspective, pag open pa lang ng app, dapat alam agad nila kung ano yung priority nila for today.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090656.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:06:56",
+    "sender": "Yoro",
+    "message": "Tama. Yan talaga yung objective clarity and focus. Hindi dapat mag-isip pa yung user kung ano ang uunahin.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090656.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:06:56",
+    "sender": "Bharon",
+    "message": "On the backend sidd, I'l support that by making sure bawat task may status, may date, and hindi siya dini-delete kapag madked as done. Status change lang talaga.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090656.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:06:56",
+    "sender": "Bharon",
+    "message": "Dominic Almazan",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090656.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:08:13",
+    "sender": "Bharon",
+    "message": "On the backend sidd, I'l support that by making sure bawat task may status, may date, and hindi siya dini-delete kapag madked as done. Status change lang talaga.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090813.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:08:13",
+    "sender": "Dominic",
+    "message": "Good. Sa frontend, i-group ko yung tasks based sa logic na yan. Today tasks sa taas, o upcoming sa gitna, tapos done sa baba. Para natural yung flow.\\",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090813.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:08:13",
+    "sender": "Yoro",
+    "message": "Yes, ganyan mismo yung gusto ng client. Parang daily task assistant, hindi lang listahan.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090813.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:08:13",
+    "sender": "Balonda",
+    "message": "I'll focus sa layout and labels. Kahit Taglish yung text, dapat intuitive pa rin. Like “Due Today”, “Upcoming”, “Done Tasks\".",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090813.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:08:13",
+    "sender": "Lebron",
+    "message": "can help sa validation side. I'll check kung consistent yung behavior, like pag nag-mark ng done, hindi biglang nawawala, and may option to undo.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 090813.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:30",
+    "sender": "Be",
+    "message": "I'll focus sa layout and labels. Kahit Taglish yung text, dapat “Due Today\", “Upcoming”, “Done Tasks\".",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091030.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:30",
+    "sender": "Lebron",
+    "message": "can help sa validation side. I'll check kung consistent yung behavior, like pag nag-mark ng done, hindi biglang nawawala, and may option to undo.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091030.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:30",
+    "sender": "Leonarda",
+    "message": "Nice. Undo is very important. Part yan ng objective natin na maging forgiving yung system sa user.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091030.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:30",
+    "sender": "Bharon",
+    "message": "Question lang, kapag in-undo yung done task, babalik ba siya sa original group niya based on date?",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091030.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:30",
+    "sender": "Leonarda",
+    "message": "Yes. Kung today yung deadline niya, balik siya sa today. Kung future date, balik siya sa upcoming.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091030.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:43",
+    "sender": "Unknown",
+    "message": "Question lang, kapag in-undo yung done task, babalik ba siya sa original group niya based on date?",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091043.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:43",
+    "sender": "Leamarda",
+    "message": "Yes. Kung today yung deadline niya, balik siya sa today. Kung future date, balik siya sa upcoming.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091043.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:43",
+    "sender": "Dominic",
+    "message": "Okay, noted. I'll make sure yung state management kaya i-handle yung ganung behavior.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091043.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:43",
+    "sender": "Lebron",
+    "message": "Also, check ko rin yung refresh behavior. Pag nag-refresh yung page, same grouping pa rin o dapat makita ng user.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091043.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:43",
+    "sender": "Leamarda",
+    "message": "Correct. Persistence is non-negotiable. Kahit mag-logout or refresh, andun pa rin yung tasks.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091043.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:10:43",
+    "sender": "Naithan",
+    "message": "So overall, ang objective natin is: when we demo this, masasabi natin na this feature helps  users organize their work daily without losing task history.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091043.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:11:55",
+    "sender": "Unknown",
+    "message": "Correct. Persistence is non-negotiable. Kahit mag-logout or rin yung tasks.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091155.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:11:55",
+    "sender": "Naithan",
+    "message": "So overall, ang objective natin is: when we demo this, masasabi natin na this feature helps users organize their work daily without losing task history.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091155.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:11:55",
+    "sender": "Leamarda",
+    "message": "Exactly. That's the story we're building. Basta aligned tayo sa goal na yan, okay na yung execution.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091155.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:11:55",
+    "sender": "Bharon",
+    "message": "Copy. I'll start with the API structure and let you know once ready for integration.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091155.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:11:55",
+    "sender": "Leamarda",
+    "message": "Perfect. Let's keep the objective in mind habang ginagawa. Update lang kayo if may blockers.",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091155.png",
+    "confidence_score": 0.95
+  },
+  {
+    "timestamp": "2026-01-22 09:11:55",
+    "sender": "Ds",
+    "message": "Guys, quick sync lang. Objective natin this week is ma-complete yung Task Management feature ng system para ready na siya for demo. Gusto ng client na simple lang pero very clear",
+    "message_type": "text",
+    "screenshot_path": "viber_screenshots\\Screenshot 2026-01-22 091155.png",
+    "confidence_score": 0.95
+  }
+]
